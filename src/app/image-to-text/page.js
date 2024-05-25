@@ -1,15 +1,13 @@
 'use client'
-import { useState } from "react"
+import React, { useState } from 'react';
 
-
-const page = () => {
-    const [count, setCount] = useState(0)
+const Page = () => {
+    const [count, setCount] = useState(0);
     return (
         <div>
             <button onClick={() => setCount(count + 1)}>{count}</button>
         </div>
-    )
+    );
+};
 
-}
-
-export default page
+export default Page;
